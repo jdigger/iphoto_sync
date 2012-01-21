@@ -1,0 +1,101 @@
+<?xml version='1.0'?>
+<!DOCTYPE signatures SYSTEM "file://localhost/System/Library/DTDs/BridgeSupport.dtd">
+<signatures version='1.0'>
+<enum name='iPhotoAlTyBookAlbum' value='1651470187'/>
+<enum name='iPhotoAlTyEventsAlbum' value='1702257004'/>
+<enum name='iPhotoAlTyFacesAlbum' value='1717657964'/>
+<enum name='iPhotoAlTyFlaggedAlbum' value='1718378860'/>
+<enum name='iPhotoAlTyFolderAlbum' value='1718379634'/>
+<enum name='iPhotoAlTyLastImportAlbum' value='1819505737'/>
+<enum name='iPhotoAlTyLastMonthsAlbum' value='1819505741'/>
+<enum name='iPhotoAlTyLastRollsAlbum' value='1819505746'/>
+<enum name='iPhotoAlTyPhotoLibraryAlbum' value='1634885996'/>
+<enum name='iPhotoAlTyPlacesAlbum' value='1886151020'/>
+<enum name='iPhotoAlTyPublishedAlbum' value='1886741107'/>
+<enum name='iPhotoAlTyRegularAlbum' value='1634493037'/>
+<enum name='iPhotoAlTySharedAlbum' value='1885433953'/>
+<enum name='iPhotoAlTySharedLibrary' value='1885433964'/>
+<enum name='iPhotoAlTySlideshowAlbum' value='1936483443'/>
+<enum name='iPhotoAlTySmartAlbum' value='1936552564'/>
+<enum name='iPhotoAlTySubscribedAlbum' value='1937072755'/>
+<enum name='iPhotoAlTyTrashAlbum' value='1953653100'/>
+<enum name='iPhotoAlTyUnknownAlbumType' value='1634497899'/>
+<enum name='iPhotoEnumDetailed' value='1819763828'/>
+<enum name='iPhotoEnumStandard' value='1819767668'/>
+<enum name='iPhotoSavoAsk' value='1634954016'/>
+<enum name='iPhotoSavoNo' value='1852776480'/>
+<enum name='iPhotoSavoYes' value='2036691744'/>
+<enum name='iPhotoViewEdit' value='1701079412'/>
+<enum name='iPhotoViewEvents' value='1702261875'/>
+<enum name='iPhotoViewOrganize' value='1869768545'/>
+<class name='iPhotoApplication'>
+<method selector='frontmost'>
+<retval type='B'/>
+</method>
+<method selector='print:printDialog:withProperties:'>
+<arg type='B' index='1'/>
+</method>
+</class>
+<class name='iPhotoDocument'>
+<method selector='modified'>
+<retval type='B'/>
+</method>
+</class>
+<class name='iPhotoItem'>
+<method selector='exists'>
+<retval type='B'/>
+</method>
+</class>
+<class name='iPhotoPrintSettings'>
+<method selector='collating'>
+<retval type='B'/>
+</method>
+<method selector='exists'>
+<retval type='B'/>
+</method>
+<method selector='setCollating:'>
+<arg type='B' index='0'/>
+</method>
+</class>
+<class name='iPhotoWindow'>
+<method selector='closeable'>
+<retval type='B'/>
+</method>
+<method selector='floating'>
+<retval type='B'/>
+</method>
+<method selector='miniaturizable'>
+<retval type='B'/>
+</method>
+<method selector='miniaturized'>
+<retval type='B'/>
+</method>
+<method selector='modal'>
+<retval type='B'/>
+</method>
+<method selector='resizable'>
+<retval type='B'/>
+</method>
+<method selector='setMiniaturized:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setVisible:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setZoomed:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='titled'>
+<retval type='B'/>
+</method>
+<method selector='visible'>
+<retval type='B'/>
+</method>
+<method selector='zoomable'>
+<retval type='B'/>
+</method>
+<method selector='zoomed'>
+<retval type='B'/>
+</method>
+</class>
+</signatures>
