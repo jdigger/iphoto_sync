@@ -29,3 +29,18 @@ if (REFRESH_ALL_DATA) then
     photo_data.insert(doc)
   end
 end
+
+puts ''
+require 'digest/sha2'
+photo_data.find({'image_sha2' => {'$exists' => false}}).each do |row|
+  print '.'
+  imagePath = row['imagePath']
+  if File.exists?(imagePath) then
+    digest = Digest::SHA2.new(256).hexdigest(File.read(imagePath))
+    row['image_sha2'] = digest
+    photo_data.update({"_id" => row['_id']}, row)
+  else
+    puts "Missing #{imagePath}"
+  end
+end
+puts ''
